@@ -1,8 +1,5 @@
 package servicioTCP.Servidor;
 
-
-import servicioTCP.cliente.ClienteTCP;
-
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -41,7 +38,7 @@ public class ServidorTCP {
                 //Luego se reinicia para admitir a un nuevo cliente.
             }
         }catch(IOException ioe){
-            Logger.getLogger(ClienteTCP.class.getName()).log(Level.SEVERE, null, ioe);
+            Logger.getLogger(ServidorTCP.class.getName()).log(Level.SEVERE, null, ioe);
         }
 
     }
